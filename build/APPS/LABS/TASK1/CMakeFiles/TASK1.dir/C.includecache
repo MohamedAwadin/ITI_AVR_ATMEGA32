@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../CTOS/COMMON/MemMap.h
+
+../CTOS/COMMON/StdTypes.h
+
+../CTOS/COMMON/Utils.h
+
+../CTOS/MCAL/MDIO/inc/MDIO.h
+StdTypes.h
+../CTOS/MCAL/MDIO/inc/StdTypes.h
+Utils.h
+../CTOS/MCAL/MDIO/inc/Utils.h
+MemMap.h
+../CTOS/MCAL/MDIO/inc/MemMap.h
+
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/src/main.c
+MDIO.h
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/src/MDIO.h
+util/delay.h
+-
+
