@@ -1,0 +1,1 @@
+avr-gcc -mmcu=atmega32 -DF_CPU=8000000UL -Os  -mmcu=atmega32 CMakeFiles/Task1.elf.dir/src/main.c.o  -o Task1.elf  MDIO/libMDIO.a 
