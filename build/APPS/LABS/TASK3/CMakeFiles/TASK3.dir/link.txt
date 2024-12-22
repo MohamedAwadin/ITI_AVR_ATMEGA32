@@ -1,1 +1,0 @@
-/usr/bin/avr-gcc -mmcu=atmega32 -DF_CPU=8000000UL -Os  -mmcu=atmega32 CMakeFiles/TASK3.dir/src/main.c.obj  -o TASK3  ../../../CTOS/MCAL/MDIO/libMDIO.a 

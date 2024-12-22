@@ -1,6 +1,5 @@
 #include "MDIO.h"
-#define F_CPU	8000000UL
-#include <util/delay.h>
+
 //>>>>>>>>>>>>>>>>>>>>>>Task1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 int main(void)
 {
