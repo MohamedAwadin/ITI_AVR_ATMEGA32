@@ -8,6 +8,7 @@
 #include "MDIO.h"
 
 
+
 MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration(Copy_enuPortNum_t port,Copy_enuPinNum_t pin,Copy_enuConfigration_t confg){
 	
 	MDIO_enuErrorStatus_t Ret_enuError ;

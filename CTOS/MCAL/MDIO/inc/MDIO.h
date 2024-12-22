@@ -10,6 +10,9 @@
 #define MDIO_H_
 
 
+#include "StdTypes.h"
+#include "Utils.h"
+#include "MemMap.h"
 
 
 
