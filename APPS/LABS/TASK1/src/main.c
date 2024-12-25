@@ -13,7 +13,7 @@ int main(void)
 	MDIO_enuSetPinConfigration(MDIO_PORTC,MDIO_PIN1,MDIO_INPULLUP);
 	MDIO_enuSetPinConfigration(MDIO_PORTD,MDIO_PIN1,MDIO_INPULLUP);
 	
-	int ST_PB1 =0,ST_PB2 =0,ST_PB3 =0,ST_PB4 =0;
+	u8 ST_PB1 =0,ST_PB2 =0,ST_PB3 =0,ST_PB4 =0;
     while (1) 
     {
 		MDIO_enuGetPinValue(MDIO_PORTA, MDIO_PIN1,&ST_PB1);

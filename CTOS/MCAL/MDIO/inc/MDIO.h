@@ -13,6 +13,8 @@
 #include "StdTypes.h"
 #include "Utils.h"
 #include "MemMap.h"
+#include "MDIO_LCFG.h"
+#include "MDIO_PBCFG.h"
 
 
 
@@ -46,13 +48,13 @@ typedef enum{
 typedef enum{
 	MDIO_LOW=0,
 	MDIO_HIGH
-	}Copy_enuState_t;	
+	}Copy_enuPinState_t;	
 	
 typedef enum{
 	MDIO_OUTPUT,
 	MDIO_INFREE,
 	MDIO_INPULLUP
-	}Copy_enuConfigration_t;
+	}Copy_enuPinConfigration_t;
 	
 	
 typedef enum{
@@ -69,16 +71,31 @@ typedef enum{
 	
 
 
-MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration(Copy_enuPortNum_t port,Copy_enuPinNum_t pin,Copy_enuConfigration_t confg);
-MDIO_enuErrorStatus_t MDIO_enuSetPortConfigration(Copy_enuPortNum_t port,Copy_enuPortConfigration_t  confg);
-MDIO_enuErrorStatus_t MDIO_enuSetPinValue( Copy_enuPortNum_t port , Copy_enuPinNum_t pin , Copy_enuState_t state);
-MDIO_enuErrorStatus_t MDIO_enuSetPortValue(Copy_enuPortNum_t port , Copy_enuPortState_t portState);
-MDIO_enuErrorStatus_t MDIO_enuSetPortWValue(Copy_enuPortNum_t port , u8 portState);
-MDIO_enuErrorStatus_t MDIO_enuGetPinValue(Copy_enuPortNum_t port ,Copy_enuPinNum_t pin ,u8* Add_pu8PinValue);
+MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration (Copy_enuPortNum_t Copy_enuPortNum ,Copy_enuPinNum_t            Copy_enuPinNum             ,Copy_enuPinConfigration_t Copy_enuPinConfigration);
 
 
+MDIO_enuErrorStatus_t MDIO_enuSetPortConfigration(Copy_enuPortNum_t Copy_enuPortNum ,Copy_enuPortConfigration_t  Copy_enuPortConfigration);
 
 
+MDIO_enuErrorStatus_t MDIO_enuSetPinValue        (Copy_enuPortNum_t Copy_enuPortNum ,Copy_enuPinNum_t            Copy_enuPinNum             ,Copy_enuPinState_t Copy_enuPinState);
+
+
+MDIO_enuErrorStatus_t MDIO_enuSetPortValue       (Copy_enuPortNum_t Copy_enuPortNum ,Copy_enuPortState_t         Copy_enuPortState);
+
+
+MDIO_enuErrorStatus_t MDIO_enuSetPortWValue      (Copy_enuPortNum_t Copy_enuPortNum ,u8                          Copy_u8PortState);
+
+
+MDIO_enuErrorStatus_t MDIO_enuGetPinValue        (Copy_enuPortNum_t Copy_enuPortNum ,Copy_enuPinNum_t            Copy_enuPinNum             ,u8* Add_pu8PinValue);
+
+MDIO_enuErrorStatus_t MDIO_enuInitPin(Copy_enuPinNum_t Copy_enuPinNum , Copy_enuPinConfigration_t Copy_enuPinConfigration );
+
+void MDIO_vInit(void);
+
+void MDIO_vSetPin(Copy_enuPortNum_t Copy_u8PortNum, Copy_enuPinNum_t Copy_u8PinNum, Copy_enuPinState_t Copy_u8Value);
+
+
+extern const Copy_enuPinConfigration_t PinsStatusArray[MDIO_NUM_OF_PINS * MDIO_NUM_OF_PORTS];
 
 
 
