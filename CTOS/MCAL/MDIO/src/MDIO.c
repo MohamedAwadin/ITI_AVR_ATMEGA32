@@ -20,6 +20,9 @@ typedef struct
 
 } MDIO_gst_PORT_t;
 
+
+
+
 MDIO_gst_PORT_t *MDIO_gst_PORTA = (MDIO_gst_PORT_t *)PTA_BASE;
 MDIO_gst_PORT_t *MDIO_gst_PORTB = (MDIO_gst_PORT_t *)PTB_BASE;
 MDIO_gst_PORT_t *MDIO_gst_PORTC = (MDIO_gst_PORT_t *)PTC_BASE;
@@ -595,14 +598,14 @@ void MDIO_vInit(void)
 	Copy_enuPinNum_t Local_uint8Iter;
 	for (Local_uint8Iter = MDIO_PIN0; Local_uint8Iter < (MDIO_NUM_OF_PORTS * MDIO_NUM_OF_PINS); Local_uint8Iter++)
 	{
-		Ret_enuError = DIO_InitPin(Local_uint8Iter, PinsStatusArray[Local_uint8Iter]);
+		Ret_enuError = MDIO_enuInitPin(Local_uint8Iter, PinsStatusArray[Local_uint8Iter]);
 		if ((Ret_enuError == MDIO_InvalidPort) || (Ret_enuError == MDIO_InvalidState))
 		{
 			break;
 		}
 	}
 }
-
+/*
 void MDIO_vSetPin(Copy_enuPortNum_t Copy_u8PortNum, Copy_enuPinNum_t Copy_u8PinNum, Copy_enuPinState_t Copy_u8Value)
 {
 
@@ -640,3 +643,4 @@ void MDIO_vSetPin(Copy_enuPortNum_t Copy_u8PortNum, Copy_enuPinNum_t Copy_u8PinN
 		port->DOR &= ~(1 << Copy_u8PinNum);
 	}
 }
+*/

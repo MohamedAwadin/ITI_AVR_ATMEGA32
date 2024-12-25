@@ -15,8 +15,8 @@ const Copy_enuPinConfigration_t PinsStatusArray[MDIO_NUM_OF_PINS * MDIO_NUM_OF_P
 	MDIO_OUTPUT,      /* Port A Pin 3 */
 	MDIO_OUTPUT,      /* Port A Pin 4 */
 	MDIO_OUTPUT,      /* Port A Pin 5 */
-	MDIO_OUTPUT,      /* Port A Pin 6 */
-	MDIO_OUTPUT,      /* Port A Pin 7 */
+	MDIO_OUTPUT,        /* Port A Pin 6 */
+	MDIO_OUTPUT,        /* Port A Pin 7 */
 	MDIO_INPULLUP,      /* Port B Pin 0   / */
 	MDIO_INPULLUP,      /* Port B Pin 1   /*/
 	MDIO_INPULLUP,		 /* Port B Pin 2 / INT2*/
