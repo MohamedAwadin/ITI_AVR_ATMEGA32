@@ -11,13 +11,13 @@ set(CMAKE_EXE_LINKER_FLAGS "-mmcu=atmega32")
 
 
 include_directories(
-    ../../../CTOS/COMMON        
-    ../../../CTOS/MCAL/MDIO/inc 
+    ../../../COTS/COMMON        
+    ../../../COTS/MCAL/MDIO/inc 
 )
 
 
-add_subdirectory(../../../CTOS/MCAL/MDIO ${CMAKE_BINARY_DIR}/MDIO)
+add_subdirectory(../../../COTS/MCAL/MDIO ${CMAKE_BINARY_DIR}/MDIO)
 add_executable(${PROJECT_NAME}.elf src/main.c)
 target_link_libraries(${PROJECT_NAME}.elf MDIO)
-include(../../../CTOS/Cmake/flash.cmake)
+include(../../../COTS/Cmake/flash.cmake)
 convert_to_hex_and_flash(${PROJECT_NAME}.elf usbasp atmega32)

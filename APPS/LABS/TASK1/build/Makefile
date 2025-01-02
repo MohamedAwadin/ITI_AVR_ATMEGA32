@@ -162,6 +162,19 @@ MDIO/fast:
 	$(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
 .PHONY : MDIO/fast
 
+#=============================================================================
+# Target rules for targets named MPORT
+
+# Build rule for target.
+MPORT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MPORT
+.PHONY : MPORT
+
+# fast build rule for target.
+MPORT/fast:
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
+.PHONY : MPORT/fast
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -201,6 +214,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... Task1.elf"
 	@echo "... MDIO"
+	@echo "... MPORT"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

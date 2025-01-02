@@ -6,3 +6,6 @@
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/MDIO/CMakeFiles/rebuild_cache.dir
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/MDIO/CMakeFiles/edit_cache.dir
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/MDIO/CMakeFiles/MDIO.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/MPORT/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/MPORT/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/MPORT/CMakeFiles/MPORT.dir

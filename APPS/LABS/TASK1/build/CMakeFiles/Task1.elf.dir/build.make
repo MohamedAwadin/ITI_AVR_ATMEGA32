@@ -80,6 +80,7 @@ Task1_elf_EXTERNAL_OBJECTS =
 Task1.elf: CMakeFiles/Task1.elf.dir/src/main.c.o
 Task1.elf: CMakeFiles/Task1.elf.dir/build.make
 Task1.elf: MDIO/libMDIO.a
+Task1.elf: MPORT/libMPORT.a
 Task1.elf: CMakeFiles/Task1.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Task1.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Task1.elf.dir/link.txt --verbose=$(VERBOSE)
