@@ -1,8 +1,0 @@
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/CMakeFiles/rebuild_cache.dir
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/CMakeFiles/edit_cache.dir
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/CMakeFiles/burn_Task3.elf.dir
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/CMakeFiles/flash_Task3.elf.dir
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/CMakeFiles/Task3.elf.dir
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/MDIO/CMakeFiles/rebuild_cache.dir
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/MDIO/CMakeFiles/edit_cache.dir
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK3/build/MDIO/CMakeFiles/MDIO.dir

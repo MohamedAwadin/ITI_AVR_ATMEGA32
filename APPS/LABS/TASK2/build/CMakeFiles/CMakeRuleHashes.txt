@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-b6405f317a4630b7ae9fbd3f342a7983 CMakeFiles/burn_Task2.elf
-49368d33ac544875c202a1587be67fe3 CMakeFiles/flash_Task2.elf

@@ -152,6 +152,33 @@ src/MDIO.c.s:
 	cd /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build && $(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.s
 .PHONY : src/MDIO.c.s
 
+src/MDIO_LCFG.o: src/MDIO_LCFG.c.o
+
+.PHONY : src/MDIO_LCFG.o
+
+# target to build an object file
+src/MDIO_LCFG.c.o:
+	cd /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build && $(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.o
+.PHONY : src/MDIO_LCFG.c.o
+
+src/MDIO_LCFG.i: src/MDIO_LCFG.c.i
+
+.PHONY : src/MDIO_LCFG.i
+
+# target to preprocess a source file
+src/MDIO_LCFG.c.i:
+	cd /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build && $(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.i
+.PHONY : src/MDIO_LCFG.c.i
+
+src/MDIO_LCFG.s: src/MDIO_LCFG.c.s
+
+.PHONY : src/MDIO_LCFG.s
+
+# target to generate assembly for a file
+src/MDIO_LCFG.c.s:
+	cd /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build && $(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.s
+.PHONY : src/MDIO_LCFG.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +191,9 @@ help:
 	@echo "... src/MDIO.o"
 	@echo "... src/MDIO.i"
 	@echo "... src/MDIO.s"
+	@echo "... src/MDIO_LCFG.o"
+	@echo "... src/MDIO_LCFG.i"
+	@echo "... src/MDIO_LCFG.s"
 .PHONY : help
 
 

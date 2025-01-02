@@ -56,11 +56,13 @@ CMAKE_BINARY_DIR = /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS
 all: CMakeFiles/flash_Task1.elf.dir/all
 all: CMakeFiles/Task1.elf.dir/all
 all: MDIO/all
+all: MPORT/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: MDIO/preinstall
+preinstall: MPORT/preinstall
 
 .PHONY : preinstall
 
@@ -69,6 +71,7 @@ clean: CMakeFiles/burn_Task1.elf.dir/clean
 clean: CMakeFiles/flash_Task1.elf.dir/clean
 clean: CMakeFiles/Task1.elf.dir/clean
 clean: MDIO/clean
+clean: MPORT/clean
 
 .PHONY : clean
 
@@ -91,18 +94,36 @@ MDIO/clean: MDIO/CMakeFiles/MDIO.dir/clean
 .PHONY : MDIO/clean
 
 #=============================================================================
+# Directory level rules for directory MPORT
+
+# Recursive "all" directory target.
+MPORT/all: MPORT/CMakeFiles/MPORT.dir/all
+
+.PHONY : MPORT/all
+
+# Recursive "preinstall" directory target.
+MPORT/preinstall:
+
+.PHONY : MPORT/preinstall
+
+# Recursive "clean" directory target.
+MPORT/clean: MPORT/CMakeFiles/MPORT.dir/clean
+
+.PHONY : MPORT/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/burn_Task1.elf.dir
 
 # All Build rule for target.
 CMakeFiles/burn_Task1.elf.dir/all: CMakeFiles/flash_Task1.elf.dir/all
 	$(MAKE) -f CMakeFiles/burn_Task1.elf.dir/build.make CMakeFiles/burn_Task1.elf.dir/depend
 	$(MAKE) -f CMakeFiles/burn_Task1.elf.dir/build.make CMakeFiles/burn_Task1.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=5 "Built target burn_Task1.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=9 "Built target burn_Task1.elf"
 .PHONY : CMakeFiles/burn_Task1.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/burn_Task1.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/burn_Task1.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 0
 .PHONY : CMakeFiles/burn_Task1.elf.dir/rule
@@ -124,12 +145,12 @@ CMakeFiles/burn_Task1.elf.dir/clean:
 CMakeFiles/flash_Task1.elf.dir/all: CMakeFiles/Task1.elf.dir/all
 	$(MAKE) -f CMakeFiles/flash_Task1.elf.dir/build.make CMakeFiles/flash_Task1.elf.dir/depend
 	$(MAKE) -f CMakeFiles/flash_Task1.elf.dir/build.make CMakeFiles/flash_Task1.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=6 "Built target flash_Task1.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=10 "Built target flash_Task1.elf"
 .PHONY : CMakeFiles/flash_Task1.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/flash_Task1.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/flash_Task1.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 0
 .PHONY : CMakeFiles/flash_Task1.elf.dir/rule
@@ -148,15 +169,16 @@ CMakeFiles/flash_Task1.elf.dir/clean:
 # Target rules for target CMakeFiles/Task1.elf.dir
 
 # All Build rule for target.
+CMakeFiles/Task1.elf.dir/all: MPORT/CMakeFiles/MPORT.dir/all
 CMakeFiles/Task1.elf.dir/all: MDIO/CMakeFiles/MDIO.dir/all
 	$(MAKE) -f CMakeFiles/Task1.elf.dir/build.make CMakeFiles/Task1.elf.dir/depend
 	$(MAKE) -f CMakeFiles/Task1.elf.dir/build.make CMakeFiles/Task1.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=3,4 "Built target Task1.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=7,8 "Built target Task1.elf"
 .PHONY : CMakeFiles/Task1.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Task1.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Task1.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 0
 .PHONY : CMakeFiles/Task1.elf.dir/rule
@@ -178,12 +200,12 @@ CMakeFiles/Task1.elf.dir/clean:
 MDIO/CMakeFiles/MDIO.dir/all:
 	$(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/depend
 	$(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=1,2 "Built target MDIO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=1,2,3 "Built target MDIO"
 .PHONY : MDIO/CMakeFiles/MDIO.dir/all
 
 # Build rule for subdir invocation for target.
 MDIO/CMakeFiles/MDIO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 MDIO/CMakeFiles/MDIO.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 0
 .PHONY : MDIO/CMakeFiles/MDIO.dir/rule
@@ -197,6 +219,33 @@ MDIO: MDIO/CMakeFiles/MDIO.dir/rule
 MDIO/CMakeFiles/MDIO.dir/clean:
 	$(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/clean
 .PHONY : MDIO/CMakeFiles/MDIO.dir/clean
+
+#=============================================================================
+# Target rules for target MPORT/CMakeFiles/MPORT.dir
+
+# All Build rule for target.
+MPORT/CMakeFiles/MPORT.dir/all:
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/depend
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles --progress-num=4,5,6 "Built target MPORT"
+.PHONY : MPORT/CMakeFiles/MPORT.dir/all
+
+# Build rule for subdir invocation for target.
+MPORT/CMakeFiles/MPORT.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 MPORT/CMakeFiles/MPORT.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK1/build/CMakeFiles 0
+.PHONY : MPORT/CMakeFiles/MPORT.dir/rule
+
+# Convenience name for target.
+MPORT: MPORT/CMakeFiles/MPORT.dir/rule
+
+.PHONY : MPORT
+
+# clean rule for target.
+MPORT/CMakeFiles/MPORT.dir/clean:
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/clean
+.PHONY : MPORT/CMakeFiles/MPORT.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

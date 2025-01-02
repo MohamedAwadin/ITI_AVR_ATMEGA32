@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MDIO.dir/src/MDIO.c.o"
+  "CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.o"
   "libMDIO.a"
   "libMDIO.pdb"
 )
