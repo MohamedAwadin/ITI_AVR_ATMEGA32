@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+97ae75a15d1ad9b70c0a6130d3d98e3d CMakeFiles/burn_TASK_SwLeds_DRIVE.elf
+d0fb27691888c2451db612608be6fc2c CMakeFiles/flash_TASK_SwLeds_DRIVE.elf

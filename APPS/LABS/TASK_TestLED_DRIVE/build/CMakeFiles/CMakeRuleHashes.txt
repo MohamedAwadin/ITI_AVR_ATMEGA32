@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+2046cd25b52bcd7b61ed7d8cdcb65203 CMakeFiles/burn_TASK_TestLED_DRIVE.elf
+e3e6351c5e6f07e05955d0242ad0dfa3 CMakeFiles/flash_TASK_TestLED_DRIVE.elf
