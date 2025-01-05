@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+73931e2987f0161afd30fcdb298014e8 CMakeFiles/burn_TASK_SWs_LEDs.elf
+9f598c37b3798482a274636185eef773 CMakeFiles/flash_TASK_SWs_LEDs.elf

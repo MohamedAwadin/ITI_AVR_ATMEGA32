@@ -1,0 +1,1 @@
+avr-gcc -mmcu=atmega32 -DF_CPU=8000000UL -Os  -mmcu=atmega32 CMakeFiles/TASK_SWs_LEDs.elf.dir/src/main.c.o  -o TASK_SWs_LEDs.elf  HSWITCH/libHSWITCH.a HLED/libHLED.a MDIO/libMDIO.a 
