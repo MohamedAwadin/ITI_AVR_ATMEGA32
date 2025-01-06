@@ -71,6 +71,8 @@ typedef enum{
 	
 extern const Copy_enuPinConfigration_t PinsStatusArray[MDIO_NUM_OF_PINS * MDIO_NUM_OF_PORTS];
 
+
+
 MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration (Copy_enuPortNum_t Copy_enuPortNum ,Copy_enuPinNum_t            Copy_enuPinNum             ,Copy_enuPinConfigration_t Copy_enuPinConfigration);
 
 

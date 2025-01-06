@@ -11,6 +11,7 @@
 #define SWITCH_1   1  // Switch 1
 #define SWITCH_2   2  // Switch 2
 
+
 /* Switch Configuration Array (Defined in HSWITCH_Config.c) */
 extern const HSWITCH_strConfig_t HSWITCH_strConfigArray[NUM_OF_SWITCHES];
 

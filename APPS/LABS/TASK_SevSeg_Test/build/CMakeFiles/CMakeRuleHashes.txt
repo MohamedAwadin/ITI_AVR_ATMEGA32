@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+b919e2553d6c0a3347377467ce185f1e CMakeFiles/burn_TASK_SevSeg_Test.elf
+5fd1f2fe53057e864e9097198ce9e62b CMakeFiles/flash_TASK_SevSeg_Test.elf

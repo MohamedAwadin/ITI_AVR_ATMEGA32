@@ -56,6 +56,7 @@ CMAKE_BINARY_DIR = /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS
 all: CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/all
 all: CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all
 all: MDIO/all
+all: MPORT/all
 all: HLED/all
 all: HSWITCH/all
 
@@ -63,6 +64,7 @@ all: HSWITCH/all
 
 # The main recursive "preinstall" target.
 preinstall: MDIO/preinstall
+preinstall: MPORT/preinstall
 preinstall: HLED/preinstall
 preinstall: HSWITCH/preinstall
 
@@ -73,6 +75,7 @@ clean: CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/clean
 clean: CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/clean
 clean: CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/clean
 clean: MDIO/clean
+clean: MPORT/clean
 clean: HLED/clean
 clean: HSWITCH/clean
 
@@ -133,18 +136,36 @@ MDIO/clean: MDIO/CMakeFiles/MDIO.dir/clean
 .PHONY : MDIO/clean
 
 #=============================================================================
+# Directory level rules for directory MPORT
+
+# Recursive "all" directory target.
+MPORT/all: MPORT/CMakeFiles/MPORT.dir/all
+
+.PHONY : MPORT/all
+
+# Recursive "preinstall" directory target.
+MPORT/preinstall:
+
+.PHONY : MPORT/preinstall
+
+# Recursive "clean" directory target.
+MPORT/clean: MPORT/CMakeFiles/MPORT.dir/clean
+
+.PHONY : MPORT/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir
 
 # All Build rule for target.
 CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/all: CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all
 	$(MAKE) -f CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/build.make CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/depend
 	$(MAKE) -f CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/build.make CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=13 "Built target flash_TASK_SwLeds_DRIVE.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=16 "Built target flash_TASK_SwLeds_DRIVE.elf"
 .PHONY : CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 0
 .PHONY : CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/rule
@@ -166,12 +187,12 @@ CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/clean:
 CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/all: CMakeFiles/flash_TASK_SwLeds_DRIVE.elf.dir/all
 	$(MAKE) -f CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/build.make CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/depend
 	$(MAKE) -f CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/build.make CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=12 "Built target burn_TASK_SwLeds_DRIVE.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=15 "Built target burn_TASK_SwLeds_DRIVE.elf"
 .PHONY : CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 0
 .PHONY : CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/rule
@@ -190,17 +211,18 @@ CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/clean:
 # Target rules for target CMakeFiles/TASK_SwLeds_DRIVE.elf.dir
 
 # All Build rule for target.
-CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all: HSWITCH/CMakeFiles/HSWITCH.dir/all
 CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all: MDIO/CMakeFiles/MDIO.dir/all
+CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all: MPORT/CMakeFiles/MPORT.dir/all
 CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all: HLED/CMakeFiles/HLED.dir/all
+CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all: HSWITCH/CMakeFiles/HSWITCH.dir/all
 	$(MAKE) -f CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/build.make CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/depend
 	$(MAKE) -f CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/build.make CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=10,11 "Built target TASK_SwLeds_DRIVE.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=13,14 "Built target TASK_SwLeds_DRIVE.elf"
 .PHONY : CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 0
 .PHONY : CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/rule
@@ -241,6 +263,33 @@ MDIO: MDIO/CMakeFiles/MDIO.dir/rule
 MDIO/CMakeFiles/MDIO.dir/clean:
 	$(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/clean
 .PHONY : MDIO/CMakeFiles/MDIO.dir/clean
+
+#=============================================================================
+# Target rules for target MPORT/CMakeFiles/MPORT.dir
+
+# All Build rule for target.
+MPORT/CMakeFiles/MPORT.dir/all:
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/depend
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=10,11,12 "Built target MPORT"
+.PHONY : MPORT/CMakeFiles/MPORT.dir/all
+
+# Build rule for subdir invocation for target.
+MPORT/CMakeFiles/MPORT.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 MPORT/CMakeFiles/MPORT.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles 0
+.PHONY : MPORT/CMakeFiles/MPORT.dir/rule
+
+# Convenience name for target.
+MPORT: MPORT/CMakeFiles/MPORT.dir/rule
+
+.PHONY : MPORT
+
+# clean rule for target.
+MPORT/CMakeFiles/MPORT.dir/clean:
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/clean
+.PHONY : MPORT/CMakeFiles/MPORT.dir/clean
 
 #=============================================================================
 # Target rules for target HLED/CMakeFiles/HLED.dir

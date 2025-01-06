@@ -6,21 +6,16 @@
 
 
 typedef enum {
-    MPORT_OK = 0,
-    MPORT_ERROR_INVALID_PIN,
+    MPORT_NOK=0,
+    MPORT_OK,
+    MPORT_ERROR_INVALID_PortPin,
     MPORT_ERROR_INVALID_DIRECTION,
     MPORT_ERROR_UNCHANGEABLE_MODE,
-    MPORT_ERROR_INVALID_MODE,
-    MPORT_NOK
+    MPORT_ERROR_INVALID_MODE
 } MPORT_enuErrorStatus_t;
 
 
-#define INPUT 0
-#define OUTPUT 1
-
-
 #define COMBINE_PORT_AND_PIN(PORT,PIN)          ((PORT<<4) | PIN)
-
 
 
 typedef enum
@@ -61,8 +56,8 @@ typedef enum
 
 typedef enum
 {
-    MPORT_PORT_PIN_INPUT = 0x00,
-    MPORT_PORT_PIN_OUTPUT = 0x01,
+    MPORT_PORT_PIN_INPUT  = 0,
+    MPORT_PORT_PIN_OUTPUT =1,
 } MPORT_enuPortPinDir_t;
 
 typedef enum
@@ -75,16 +70,65 @@ typedef enum
 
 
 // Function prototypes
+
+
 /**
  * @brief Set the direction of a specific pin.
+ * 
+ * @param Copy_enuPortPin The combined port and pin number.
+ *                        Use `MPORT_PIN_<PORT><PIN>` macros for readability.
+ *                        Example: `MPORT_PIN_A0` for Port A, Pin 0.
+ * @param Copy_enuPortPinDir The desired pin direction. Possible values include:
+ *                            - `MPORT_PORT_PIN_INPUT`
+ *                            - `MPORT_PORT_PIN_OUTPUT`
+ * @return MPORT_enuErrorStatus_t Error status of the operation.
  */
 MPORT_enuErrorStatus_t MPORT_enuSetPinDirection(MPORT_enuPortPin_t Copy_enuPortPin, MPORT_enuPortPinDir_t Copy_enuPortPinDir);
+
+
+
 /**
  * @brief Configure the mode of a specific pin.
+ *
+ * This function sets the mode of a specific pin on the microcontroller. The mode
+ * determines the pin's behavior, such as acting as an input with pull-up/down resistors
+ * or being used for specialized functions like UART.
+ *
+ * @param Copy_enuPortPin The combined port and pin number.
+ *                        Use `MPORT_PIN_<PORT><PIN>` macros for readability.
+ *                        Example: `MPORT_PIN_A0` for Port A, Pin 0.
+ *
+ * @param Copy_enuPortPinMode The desired pin mode. Possible values include:
+ *                            - `MPORT_PIN_MODE_INPUT_PULLUP`
+ *                            - `MPORT_PIN_MODE_INPUT_PULLDOWN`
+ *                            - `MPORT_PIN_MODE_UART`
+ *                            - `MPORT_PIN_MODE_NONE`
+ *
+ * @return MPORT_enuErrorStatus_t Error status of the operation:
+ *         - `MPORT_OK`: Successfully configured the pin mode.
+ *         - `MPORT_ERROR_INVALID_PortPin`: Invalid pin_port number.
+ *         - `MPORT_ERROR_INVALID_MODE`: The mode is invalid or unsupported.
+ *         - `MPORT_ERROR_UNCHANGEABLE_MODE`: Mode cannot be changed for the pin.
+ *
+ * @note Ensure that the mode is supported by the hardware for the given pin.
  */
 MPORT_enuErrorStatus_t MPORT_enuSetPinMode(MPORT_enuPortPin_t Copy_enuPortPin, MPORT_enuPortPinMode_t Copy_enuPortPinMode);
+
+
+
 /**
  * @brief Initialize all port pins based on configuration.
+ *
+ * This function initializes all pins of the microcontroller according to the
+ * configuration provided in `MPORT_enuArrPinConfig`. Each pin's direction and mode
+ * are set during this initialization.
+ *
+ * @note The configuration array `MPORT_enuArrPinConfig` must be defined and initialized
+ *       in `MPORT_LCFG.c`. The number of pins (`MPORT_NUM_OF_ALL_PINS`) must align with
+ *       the configuration.
+ *
+ * @return void
+ *
  */
 void MPort_vInit(void);
 

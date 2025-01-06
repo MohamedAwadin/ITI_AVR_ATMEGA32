@@ -25,6 +25,8 @@
 #define GET_LOW_NIB(REG)            (REG         & 0x0F)
 // Toggle low nibble in REG            
 #define TGL_LOW_NIB(REG)            (REG ^= 0x0F)
+//Combine High and Low Nibble (8 Byte Value )
+#define COMBINE_HIGH_AND_LOW_NIB(HIGH_NIB,LOW_NIB)          ((HIGH_NIB<<4) | LOW_NIB)
 
 /***********************************************************************/
 

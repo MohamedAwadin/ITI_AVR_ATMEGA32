@@ -82,6 +82,7 @@ TASK_SwLeds_DRIVE.elf: CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/build.make
 TASK_SwLeds_DRIVE.elf: HSWITCH/libHSWITCH.a
 TASK_SwLeds_DRIVE.elf: HLED/libHLED.a
 TASK_SwLeds_DRIVE.elf: MDIO/libMDIO.a
+TASK_SwLeds_DRIVE.elf: MPORT/libMPORT.a
 TASK_SwLeds_DRIVE.elf: CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SwLeds_DRIVE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable TASK_SwLeds_DRIVE.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/link.txt --verbose=$(VERBOSE)

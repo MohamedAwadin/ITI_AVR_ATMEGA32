@@ -19,6 +19,8 @@ Bit_Math.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc/Bit_Math.h
 MDIO.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc/MDIO.h
+MPORT.h
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc/MPORT.h
 
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc/HSWITCH_Config.h
 HSWITCH.h
@@ -29,12 +31,6 @@ HSWITCH.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/src/HSWITCH.h
 HSWITCH_Config.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/src/HSWITCH_Config.h
-
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/src/HSWITCH_Config.c
-HSWITCH_Config.h
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/src/HSWITCH_Config.h
-HSWITCH.h
-/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/src/HSWITCH.h
 
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO.h
 StdTypes.h
@@ -51,4 +47,6 @@ MDIO_PBCFG.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h
+
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc/MPORT.h
 

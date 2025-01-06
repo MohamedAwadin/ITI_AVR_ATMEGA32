@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/CMakeLists.txt"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/CMakeLists.txt"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/CMakeLists.txt"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
@@ -117,6 +118,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "MDIO/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MPORT/CMakeFiles/CMakeDirectoryInformation.cmake"
   "HLED/CMakeFiles/CMakeDirectoryInformation.cmake"
   "HSWITCH/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -127,6 +129,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/burn_TASK_SwLeds_DRIVE.elf.dir/DependInfo.cmake"
   "CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/DependInfo.cmake"
   "MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake"
+  "MPORT/CMakeFiles/MPORT.dir/DependInfo.cmake"
   "HLED/CMakeFiles/HLED.dir/DependInfo.cmake"
   "HSWITCH/CMakeFiles/HSWITCH.dir/DependInfo.cmake"
   )
