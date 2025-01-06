@@ -12,6 +12,9 @@ set(CMAKE_EXE_LINKER_FLAGS "-mmcu=atmega32")
 # Include the MDIO driver
 add_subdirectory(../../../COTS/MCAL/MDIO ${CMAKE_BINARY_DIR}/MDIO)
 
+# Include the MDIO driver
+add_subdirectory(../../../COTS/MCAL/MPORT ${CMAKE_BINARY_DIR}/MPORT)
+
 # Include the HLED driver
 add_subdirectory(../../../COTS/HAL/HLED ${CMAKE_BINARY_DIR}/HLED)
 
@@ -22,7 +25,7 @@ add_subdirectory(../../../COTS/HAL/HSWITCH ${CMAKE_BINARY_DIR}/HSWITCH)
 add_executable(${PROJECT_NAME}.elf src/main.c)
 
 # Link the MDIO and HLED libraries
-target_link_libraries(${PROJECT_NAME}.elf PUBLIC  HSWITCH HLED MDIO)
+target_link_libraries(${PROJECT_NAME}.elf PUBLIC  HSWITCH HLED MDIO MPORT)
 
 # Include the flash script and configure flashing
 include(../../../COTS/Cmake/flash.cmake)

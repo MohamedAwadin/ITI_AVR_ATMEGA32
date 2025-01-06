@@ -10,6 +10,7 @@ HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH.c.o: /home/awadin/ITI_9Monthes/AVR/Av
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO.h
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h
+HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc/MPORT.h
 
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/COMMON/Bit_Math.h
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/COMMON/MemMap.h
@@ -20,4 +21,5 @@ HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH_Config.c.o: /home/awadin/ITI_9Monthes
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO.h
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h
+HSWITCH/CMakeFiles/HSWITCH.dir/src/HSWITCH_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc/MPORT.h
 

@@ -15,6 +15,8 @@
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/inc/HLED.h
 MDIO.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/inc/MDIO.h
+MPORT.h
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/inc/MPORT.h
 StdTypes.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/inc/StdTypes.h
 Bit_Math.h
@@ -51,4 +53,6 @@ MDIO_PBCFG.h
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 
 /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h
+
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc/MPORT.h
 

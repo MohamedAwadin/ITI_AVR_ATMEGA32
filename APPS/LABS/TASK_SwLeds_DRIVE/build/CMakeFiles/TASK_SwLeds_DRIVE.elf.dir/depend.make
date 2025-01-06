@@ -12,4 +12,5 @@ CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR
 CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO.h
 CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h
+CMakeFiles/TASK_SwLeds_DRIVE.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc/MPORT.h
 

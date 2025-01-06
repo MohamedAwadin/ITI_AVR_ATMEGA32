@@ -9,4 +9,5 @@ target_include_directories(HSWITCH PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../../COMMON
     ${CMAKE_CURRENT_SOURCE_DIR}/../../MCAL/MDIO/inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../MCAL/MPORT/inc
 )

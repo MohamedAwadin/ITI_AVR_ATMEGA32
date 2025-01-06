@@ -10,6 +10,7 @@ HLED/CMakeFiles/HLED.dir/src/HLED.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/I
 HLED/CMakeFiles/HLED.dir/src/HLED.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO.h
 HLED/CMakeFiles/HLED.dir/src/HLED.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 HLED/CMakeFiles/HLED.dir/src/HLED.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h
+HLED/CMakeFiles/HLED.dir/src/HLED.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc/MPORT.h
 
 HLED/CMakeFiles/HLED.dir/src/HLED_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/COMMON/Bit_Math.h
 HLED/CMakeFiles/HLED.dir/src/HLED_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/COMMON/MemMap.h
@@ -20,4 +21,5 @@ HLED/CMakeFiles/HLED.dir/src/HLED_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_
 HLED/CMakeFiles/HLED.dir/src/HLED_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO.h
 HLED/CMakeFiles/HLED.dir/src/HLED_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 HLED/CMakeFiles/HLED.dir/src/HLED_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h
+HLED/CMakeFiles/HLED.dir/src/HLED_Config.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc/MPORT.h
 

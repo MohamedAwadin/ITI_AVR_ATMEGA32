@@ -14,6 +14,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/../../COMMON"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/../../MCAL/MDIO/inc"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/../../MCAL/MPORT/inc"
   )
 
 # Targets to which this target links.

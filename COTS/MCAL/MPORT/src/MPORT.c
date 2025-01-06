@@ -7,7 +7,7 @@
 #include "MPORT.h"
 
 
-extern MPORT_structPortPinDirAndMode_t MDIO_enuArrPinConfig[MPORT_NUM_OF_ALL_PINS];
+extern MPORT_structPortPinDirAndMode_t MPORT_enuArrPinConfig[MPORT_NUM_OF_ALL_PINS];
 #define PTA_BASE 0x39
 #define PTB_BASE 0x36
 #define PTC_BASE 0x33
@@ -32,10 +32,10 @@ static MDIO_gst_PORT_t* const MDIO_gst_PORTS[] = {
  * @brief Initialize all port pins based on configuration.
  *
  * This function initializes all pins of the microcontroller according to the
- * configuration provided in `MDIO_enuArrPinConfig`. Each pin's direction and mode
+ * configuration provided in `MPORT_enuArrPinConfig`. Each pin's direction and mode
  * are set during this initialization.
  *
- * @note The configuration array `MDIO_enuArrPinConfig` must be defined and initialized
+ * @note The configuration array `MPORT_enuArrPinConfig` must be defined and initialized
  *       in `MPORT_LCFG.c`. The number of pins (`MPORT_NUM_OF_ALL_PINS`) must align with
  *       the configuration.
  *
@@ -44,6 +44,7 @@ static MDIO_gst_PORT_t* const MDIO_gst_PORTS[] = {
  */
 
 void MPort_vInit(void) {
+    
     u8 Local_u8Iter;
     u8 Local_u8PortNum;
     u8 Local_u8PinNum;
@@ -53,8 +54,8 @@ void MPort_vInit(void) {
         Local_u8PortNum = Local_u8Iter / 8;
 	    Local_u8PinNum  = Local_u8Iter % 8;
         Local_u8CombinedPortAndPinNum  = COMBINE_PORT_AND_PIN(Local_u8PortNum , Local_u8PinNum) ;
-        MPORT_enuSetPinDirection(Local_u8CombinedPortAndPinNum, MDIO_enuArrPinConfig[Local_u8Iter].Direction);
-        MPORT_enuSetPinMode(Local_u8CombinedPortAndPinNum, MDIO_enuArrPinConfig[Local_u8Iter].Mode);
+        MPORT_enuSetPinDirection(Local_u8CombinedPortAndPinNum, MPORT_enuArrPinConfig[Local_u8Iter].Direction);
+        MPORT_enuSetPinMode(Local_u8CombinedPortAndPinNum, MPORT_enuArrPinConfig[Local_u8Iter].Mode);
     }
 }
 
@@ -62,38 +63,49 @@ void MPort_vInit(void) {
  * @brief Set the direction of a specific pin.
  * 
  * @param Copy_enuPortPin The combined port and pin number.
- * @param Copy_enuPortPinDir The desired direction (INPUT or OUTPUT).
+ *                        Use `MPORT_PIN_<PORT><PIN>` macros for readability.
+ *                        Example: `MPORT_PIN_A0` for Port A, Pin 0.
+ * @param Copy_enuPortPinDir The desired pin direction. Possible values include:
+ *                            - `MPORT_PORT_PIN_INPUT`
+ *                            - `MPORT_PORT_PIN_OUTPUT`
  * @return MPORT_enuErrorStatus_t Error status of the operation.
  */
 
 
 MPORT_enuErrorStatus_t MPORT_enuSetPinDirection(MPORT_enuPortPin_t Copy_enuPortPin, MPORT_enuPortPinDir_t Copy_enuPortPinDir) {
     
-    
+    MPORT_enuErrorStatus_t Ret_enuError = MPORT_NOK;
     u8 Local_u8PortNum = GET_HIGH_NIB(Copy_enuPortPin);
-    u8 Local_u8PinNum  = CLR_LOW_NIB(Copy_enuPortPin);
+    u8 Local_u8PinNum  = GET_LOW_NIB(Copy_enuPortPin);
     
 
     if (Local_u8PortNum > 3 || Local_u8PinNum > 7) {
-        return MPORT_ERROR_INVALID_PIN;
+        
+        Ret_enuError = MPORT_ERROR_INVALID_PortPin;
     }
 
-    if (Copy_enuPortPinDir != MPORT_PORT_PIN_INPUT && Copy_enuPortPinDir != MPORT_PORT_PIN_OUTPUT) {
-        return MPORT_ERROR_INVALID_DIRECTION;
+    if ((Copy_enuPortPinDir != MPORT_PORT_PIN_INPUT) && (Copy_enuPortPinDir != MPORT_PORT_PIN_OUTPUT)) {
+        
+        Ret_enuError =  MPORT_ERROR_INVALID_DIRECTION;
     }
 
     switch (Copy_enuPortPinDir)
     {
         case MPORT_PORT_PIN_OUTPUT:
             SET_BIT(MDIO_gst_PORTS[Local_u8PortNum]->DDR , Local_u8PinNum);
+            Ret_enuError = MPORT_OK ;
             break;
         case MPORT_PORT_PIN_INPUT:
             CLEAR_BIT(MDIO_gst_PORTS[Local_u8PortNum]->DDR , Local_u8PinNum);
+            Ret_enuError = MPORT_OK ;
             break;
     }
 
-    return MPORT_OK;
+    return Ret_enuError ;
 }
+
+
+
 
 
 
@@ -116,7 +128,7 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection(MPORT_enuPortPin_t Copy_enuPortP
  *
  * @return MPORT_enuErrorStatus_t Error status of the operation:
  *         - `MPORT_OK`: Successfully configured the pin mode.
- *         - `MPORT_ERROR_INVALID_PIN`: Invalid pin number.
+ *         - `MPORT_ERROR_INVALID_PortPin`: Invalid pin_port number.
  *         - `MPORT_ERROR_INVALID_MODE`: The mode is invalid or unsupported.
  *         - `MPORT_ERROR_UNCHANGEABLE_MODE`: Mode cannot be changed for the pin.
  *
@@ -125,32 +137,35 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection(MPORT_enuPortPin_t Copy_enuPortP
 MPORT_enuErrorStatus_t MPORT_enuSetPinMode(MPORT_enuPortPin_t Copy_enuPortPin, MPORT_enuPortPinMode_t Copy_enuPortPinMode){
     
     u8 Local_u8PortNum = GET_HIGH_NIB(Copy_enuPortPin);
-    u8 Local_u8PinNum  = CLR_LOW_NIB(Copy_enuPortPin);
+    u8 Local_u8PinNum  = GET_LOW_NIB(Copy_enuPortPin);
+    MPORT_enuErrorStatus_t Ret_enuError = MPORT_NOK;
 
-    if (Local_u8PortNum > 3 || Local_u8PinNum > 7) {
-        return MPORT_ERROR_INVALID_PIN;
+    if ((Local_u8PortNum > 3) || (Local_u8PinNum > 7)) {
+        Ret_enuError = MPORT_ERROR_INVALID_PortPin;
     }
 
     switch (Copy_enuPortPinMode) {
         
         case MPORT_PIN_MODE_INPUT_PULLUP:
-            CLEAR_BIT(MDIO_gst_PORTS[Local_u8PortNum]->DOR, Local_u8PinNum);
+            SET_BIT(MDIO_gst_PORTS[Local_u8PortNum]->DOR, Local_u8PinNum);
+            Ret_enuError = MPORT_OK;
             break;
 
         case MPORT_PIN_MODE_INPUT_PULLDOWN:
-            SET_BIT(MDIO_gst_PORTS[Local_u8PortNum]->DOR, Local_u8PinNum);
+            CLEAR_BIT(MDIO_gst_PORTS[Local_u8PortNum]->DOR, Local_u8PinNum);
+            Ret_enuError = MPORT_OK;
             break;
 
         case MPORT_PIN_MODE_UART:
             
-            return MPORT_ERROR_UNCHANGEABLE_MODE;
+            Ret_enuError = MPORT_ERROR_UNCHANGEABLE_MODE;
             break;
 
         default:
-            return MPORT_ERROR_INVALID_MODE;
+            Ret_enuError = MPORT_ERROR_INVALID_MODE;
     }
 
-    return MPORT_OK;
+    return Ret_enuError;
 }
 
 

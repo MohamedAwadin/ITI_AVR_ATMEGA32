@@ -6,5 +6,5 @@ C_FLAGS = -mmcu=atmega32 -DF_CPU=8000000UL -Os
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/inc -I/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/../../COMMON -I/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/../../MCAL/MDIO/inc 
+C_INCLUDES = -I/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/inc -I/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/../../COMMON -I/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/../../MCAL/MDIO/inc -I/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HLED/../../MCAL/MPORT/inc 
 

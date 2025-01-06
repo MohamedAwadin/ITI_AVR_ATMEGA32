@@ -1,0 +1,14 @@
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles/burn_TASK_SevSeg_Test.elf.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles/flash_TASK_SevSeg_Test.elf.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles/TASK_SevSeg_Test.elf.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MDIO/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MDIO/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MDIO/CMakeFiles/MDIO.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MPORT/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MPORT/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MPORT/CMakeFiles/MPORT.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/HSEVENSEG/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/HSEVENSEG/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/HSEVENSEG/CMakeFiles/HSEVENSEG.dir

@@ -163,6 +163,19 @@ MDIO/fast:
 .PHONY : MDIO/fast
 
 #=============================================================================
+# Target rules for targets named MPORT
+
+# Build rule for target.
+MPORT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MPORT
+.PHONY : MPORT
+
+# fast build rule for target.
+MPORT/fast:
+	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
+.PHONY : MPORT/fast
+
+#=============================================================================
 # Target rules for targets named HLED
 
 # Build rule for target.
@@ -227,6 +240,7 @@ help:
 	@echo "... burn_TASK_SwLeds_DRIVE.elf"
 	@echo "... TASK_SwLeds_DRIVE.elf"
 	@echo "... MDIO"
+	@echo "... MPORT"
 	@echo "... HLED"
 	@echo "... HSWITCH"
 	@echo "... src/main.o"

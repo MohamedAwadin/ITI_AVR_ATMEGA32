@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "hswitch.h": "c"
+        "hswitch.h": "c",
+        "hsevenseg.h": "c",
+        "mport.h": "c",
+        "hled.h": "c"
     }
 }
