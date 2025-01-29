@@ -58,6 +58,7 @@ all: CMakeFiles/TASK_SevSeg_Test.elf.dir/all
 all: MDIO/all
 all: MPORT/all
 all: HSEVENSEG/all
+all: HSWITCH/all
 
 .PHONY : all
 
@@ -65,6 +66,7 @@ all: HSEVENSEG/all
 preinstall: MDIO/preinstall
 preinstall: MPORT/preinstall
 preinstall: HSEVENSEG/preinstall
+preinstall: HSWITCH/preinstall
 
 .PHONY : preinstall
 
@@ -75,6 +77,7 @@ clean: CMakeFiles/TASK_SevSeg_Test.elf.dir/clean
 clean: MDIO/clean
 clean: MPORT/clean
 clean: HSEVENSEG/clean
+clean: HSWITCH/clean
 
 .PHONY : clean
 
@@ -95,6 +98,24 @@ HSEVENSEG/preinstall:
 HSEVENSEG/clean: HSEVENSEG/CMakeFiles/HSEVENSEG.dir/clean
 
 .PHONY : HSEVENSEG/clean
+
+#=============================================================================
+# Directory level rules for directory HSWITCH
+
+# Recursive "all" directory target.
+HSWITCH/all: HSWITCH/CMakeFiles/HSWITCH.dir/all
+
+.PHONY : HSWITCH/all
+
+# Recursive "preinstall" directory target.
+HSWITCH/preinstall:
+
+.PHONY : HSWITCH/preinstall
+
+# Recursive "clean" directory target.
+HSWITCH/clean: HSWITCH/CMakeFiles/HSWITCH.dir/clean
+
+.PHONY : HSWITCH/clean
 
 #=============================================================================
 # Directory level rules for directory MDIO
@@ -139,12 +160,12 @@ MPORT/clean: MPORT/CMakeFiles/MPORT.dir/clean
 CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/all: CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/all
 	$(MAKE) -f CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/build.make CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/depend
 	$(MAKE) -f CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/build.make CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=12 "Built target burn_TASK_SevSeg_Test.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=15 "Built target burn_TASK_SevSeg_Test.elf"
 .PHONY : CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/rule
@@ -166,12 +187,12 @@ CMakeFiles/burn_TASK_SevSeg_Test.elf.dir/clean:
 CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/all: CMakeFiles/TASK_SevSeg_Test.elf.dir/all
 	$(MAKE) -f CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/build.make CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/depend
 	$(MAKE) -f CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/build.make CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=13 "Built target flash_TASK_SevSeg_Test.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=16 "Built target flash_TASK_SevSeg_Test.elf"
 .PHONY : CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/rule
@@ -193,14 +214,15 @@ CMakeFiles/flash_TASK_SevSeg_Test.elf.dir/clean:
 CMakeFiles/TASK_SevSeg_Test.elf.dir/all: MDIO/CMakeFiles/MDIO.dir/all
 CMakeFiles/TASK_SevSeg_Test.elf.dir/all: MPORT/CMakeFiles/MPORT.dir/all
 CMakeFiles/TASK_SevSeg_Test.elf.dir/all: HSEVENSEG/CMakeFiles/HSEVENSEG.dir/all
+CMakeFiles/TASK_SevSeg_Test.elf.dir/all: HSWITCH/CMakeFiles/HSWITCH.dir/all
 	$(MAKE) -f CMakeFiles/TASK_SevSeg_Test.elf.dir/build.make CMakeFiles/TASK_SevSeg_Test.elf.dir/depend
 	$(MAKE) -f CMakeFiles/TASK_SevSeg_Test.elf.dir/build.make CMakeFiles/TASK_SevSeg_Test.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=10,11 "Built target TASK_SevSeg_Test.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=13,14 "Built target TASK_SevSeg_Test.elf"
 .PHONY : CMakeFiles/TASK_SevSeg_Test.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TASK_SevSeg_Test.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TASK_SevSeg_Test.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/TASK_SevSeg_Test.elf.dir/rule
@@ -222,7 +244,7 @@ CMakeFiles/TASK_SevSeg_Test.elf.dir/clean:
 MDIO/CMakeFiles/MDIO.dir/all:
 	$(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/depend
 	$(MAKE) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=4,5,6 "Built target MDIO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=7,8,9 "Built target MDIO"
 .PHONY : MDIO/CMakeFiles/MDIO.dir/all
 
 # Build rule for subdir invocation for target.
@@ -249,7 +271,7 @@ MDIO/CMakeFiles/MDIO.dir/clean:
 MPORT/CMakeFiles/MPORT.dir/all:
 	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/depend
 	$(MAKE) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=7,8,9 "Built target MPORT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=10,11,12 "Built target MPORT"
 .PHONY : MPORT/CMakeFiles/MPORT.dir/all
 
 # Build rule for subdir invocation for target.
@@ -295,6 +317,33 @@ HSEVENSEG: HSEVENSEG/CMakeFiles/HSEVENSEG.dir/rule
 HSEVENSEG/CMakeFiles/HSEVENSEG.dir/clean:
 	$(MAKE) -f HSEVENSEG/CMakeFiles/HSEVENSEG.dir/build.make HSEVENSEG/CMakeFiles/HSEVENSEG.dir/clean
 .PHONY : HSEVENSEG/CMakeFiles/HSEVENSEG.dir/clean
+
+#=============================================================================
+# Target rules for target HSWITCH/CMakeFiles/HSWITCH.dir
+
+# All Build rule for target.
+HSWITCH/CMakeFiles/HSWITCH.dir/all:
+	$(MAKE) -f HSWITCH/CMakeFiles/HSWITCH.dir/build.make HSWITCH/CMakeFiles/HSWITCH.dir/depend
+	$(MAKE) -f HSWITCH/CMakeFiles/HSWITCH.dir/build.make HSWITCH/CMakeFiles/HSWITCH.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles --progress-num=4,5,6 "Built target HSWITCH"
+.PHONY : HSWITCH/CMakeFiles/HSWITCH.dir/all
+
+# Build rule for subdir invocation for target.
+HSWITCH/CMakeFiles/HSWITCH.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 HSWITCH/CMakeFiles/HSWITCH.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/CMakeFiles 0
+.PHONY : HSWITCH/CMakeFiles/HSWITCH.dir/rule
+
+# Convenience name for target.
+HSWITCH: HSWITCH/CMakeFiles/HSWITCH.dir/rule
+
+.PHONY : HSWITCH
+
+# clean rule for target.
+HSWITCH/CMakeFiles/HSWITCH.dir/clean:
+	$(MAKE) -f HSWITCH/CMakeFiles/HSWITCH.dir/build.make HSWITCH/CMakeFiles/HSWITCH.dir/clean
+.PHONY : HSWITCH/CMakeFiles/HSWITCH.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

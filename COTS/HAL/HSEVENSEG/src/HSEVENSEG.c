@@ -64,8 +64,8 @@ HSEVENSEG_enumErrorStatus_t HSEVENSEG_vSetValue(u8 Copy_enuSevenSegNum, u8 Copy_
     HSEVENSEG_enumErrorStatus_t Ret_enuErrorStatus = HSEVENSEG_OK;
     u8 Local_u8DisplayValue;
     u8 Local_u8Iter;
-    Copy_enuPortNum_t Local_enumPort;
-    Copy_enuPinNum_t  Local_enumPin ;
+    MDIO_enuPortNum_t Local_enumPort;
+    MDIO_enuPinNum_t  Local_enumPin ;
 
      /* Check if the display index is valid */
     if (Copy_enuSevenSegNum >= NUM_OF_SEVENSEGS)
@@ -92,8 +92,8 @@ HSEVENSEG_enumErrorStatus_t HSEVENSEG_vSetValue(u8 Copy_enuSevenSegNum, u8 Copy_
         for (Local_u8Iter = 0; Local_u8Iter < HSEVENSEG_Total_Num_Pins; Local_u8Iter++)
         {
             /* Extract port and pin from HSEVENSEG_enumPinPortNum_t */
-            Local_enumPort = (Copy_enuPortNum_t)(GET_HIGH_NIB(HSEVENSEG_strConfigArray[Copy_enuSevenSegNum].SEVENSEG_enumPinArray[Local_u8Iter]));
-            Local_enumPin  = (Copy_enuPinNum_t)(GET_LOW_NIB(HSEVENSEG_strConfigArray[Copy_enuSevenSegNum].SEVENSEG_enumPinArray[Local_u8Iter]));
+            Local_enumPort = (MDIO_enuPortNum_t)(GET_HIGH_NIB(HSEVENSEG_strConfigArray[Copy_enuSevenSegNum].SEVENSEG_enumPinArray[Local_u8Iter]));
+            Local_enumPin  = (MDIO_enuPinNum_t)(GET_LOW_NIB(HSEVENSEG_strConfigArray[Copy_enuSevenSegNum].SEVENSEG_enumPinArray[Local_u8Iter]));
 
             /* Set the pin value based on the lookup table */
             MDIO_enuSetPinValue(Local_enumPort, Local_enumPin, HSEVENSEG_GET_PINVALUE(Local_u8DisplayValue , Local_u8Iter));

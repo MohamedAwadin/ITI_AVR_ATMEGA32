@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/Cmake/flash.cmake"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSEVENSEG/CMakeLists.txt"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/CMakeLists.txt"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/CMakeLists.txt"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in"
@@ -119,6 +120,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "MDIO/CMakeFiles/CMakeDirectoryInformation.cmake"
   "MPORT/CMakeFiles/CMakeDirectoryInformation.cmake"
   "HSEVENSEG/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "HSWITCH/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -129,4 +131,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake"
   "MPORT/CMakeFiles/MPORT.dir/DependInfo.cmake"
   "HSEVENSEG/CMakeFiles/HSEVENSEG.dir/DependInfo.cmake"
+  "HSWITCH/CMakeFiles/HSWITCH.dir/DependInfo.cmake"
   )

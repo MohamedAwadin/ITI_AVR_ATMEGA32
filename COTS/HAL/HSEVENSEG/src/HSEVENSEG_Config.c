@@ -16,21 +16,21 @@ const HSEVENSEG_strConfig_t HSEVENSEG_strConfigArray[NUM_OF_SEVENSEGS] =
             HSEVENSEG_PIN_A5,   /*Segment F*/
             HSEVENSEG_PIN_A6    /*Segment G*/
         },
-        HSEVENSEG_COMMON_CATHODE
+        HSEVENSEG_COMMON_ANODE
     },
     /* Seven-Segment Display 1 */
     {
         {
             
-            HSEVENSEG_PIN_B0,  /*Segment A*/
-            HSEVENSEG_PIN_B1,  /*Segment B*/
-            HSEVENSEG_PIN_B2,  /*Segment C*/
-            HSEVENSEG_PIN_B3,  /*Segment D*/
-            HSEVENSEG_PIN_B4,  /*Segment E*/
-            HSEVENSEG_PIN_B5,  /*Segment F*/
-            HSEVENSEG_PIN_B6  /*Segment G*/
+            HSEVENSEG_PIN_D0,/*Segment A*/
+            HSEVENSEG_PIN_D1,/*Segment B*/
+            HSEVENSEG_PIN_D2,/*Segment C*/
+            HSEVENSEG_PIN_D3,/*Segment D*/
+            HSEVENSEG_PIN_D4,/*Segment E*/
+            HSEVENSEG_PIN_D5,/*Segment F*/
+            HSEVENSEG_PIN_D6/*Segment G*/
         },
-        HSEVENSEG_COMMON_CATHODE
+        HSEVENSEG_COMMON_ANODE
     },
     /* Seven-Segment Display 2 */
     {
@@ -48,15 +48,15 @@ const HSEVENSEG_strConfig_t HSEVENSEG_strConfigArray[NUM_OF_SEVENSEGS] =
     /* Seven-Segment Display 3 */
     {
         {
-            HSEVENSEG_PIN_D0,/*Segment A*/
-            HSEVENSEG_PIN_D1,/*Segment B*/
-            HSEVENSEG_PIN_D2,/*Segment C*/
-            HSEVENSEG_PIN_D3,/*Segment D*/
-            HSEVENSEG_PIN_D4,/*Segment E*/
-            HSEVENSEG_PIN_D5,/*Segment F*/
-            HSEVENSEG_PIN_D6/*Segment G*/
+            HSEVENSEG_PIN_B0,/*Segment A*/
+            HSEVENSEG_PIN_B1,/*Segment B*/
+            HSEVENSEG_PIN_B2,/*Segment C*/
+            HSEVENSEG_PIN_B3,/*Segment D*/
+            HSEVENSEG_PIN_B4,/*Segment E*/
+            HSEVENSEG_PIN_B5,/*Segment F*/
+            HSEVENSEG_PIN_B6/*Segment G*/
         },
-        HSEVENSEG_COMMON_CATHODE
+        HSEVENSEG_COMMON_ANODE
     }
 
 };

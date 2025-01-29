@@ -7,10 +7,6 @@
 #include "StdTypes.h"
 #include "Bit_Math.h"
 
-#define PORT_DRIVER  0
-#define PIN_DRIVER   1
-
-#define HLED_DRIVER PIN_DRIVER
 
 
 /* LED Logic States */
@@ -38,8 +34,8 @@ typedef enum {
 
 /* LED Configuration Structure */
 typedef struct {
-    Copy_enuPortNum_t port_Number;           // Port number (e.g., MDIO_PORTA)
-    Copy_enuPinNum_t pin_Number;             // Pin number (e.g., MDIO_PIN0)
+    MDIO_enuPortNum_t port_Number;           // Port number (e.g., MDIO_PORTA)
+    MDIO_enuPinNum_t pin_Number;             // Pin number (e.g., MDIO_PIN0)
     HLED_enumConnectOptions_t connection;    // Connection type (Forward/Reverse)
 } HLED_strPinConfig_t;
 

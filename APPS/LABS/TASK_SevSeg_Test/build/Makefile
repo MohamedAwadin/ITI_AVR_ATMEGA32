@@ -188,6 +188,19 @@ HSEVENSEG/fast:
 	$(MAKE) -f HSEVENSEG/CMakeFiles/HSEVENSEG.dir/build.make HSEVENSEG/CMakeFiles/HSEVENSEG.dir/build
 .PHONY : HSEVENSEG/fast
 
+#=============================================================================
+# Target rules for targets named HSWITCH
+
+# Build rule for target.
+HSWITCH: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HSWITCH
+.PHONY : HSWITCH
+
+# fast build rule for target.
+HSWITCH/fast:
+	$(MAKE) -f HSWITCH/CMakeFiles/HSWITCH.dir/build.make HSWITCH/CMakeFiles/HSWITCH.dir/build
+.PHONY : HSWITCH/fast
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -229,6 +242,7 @@ help:
 	@echo "... MDIO"
 	@echo "... MPORT"
 	@echo "... HSEVENSEG"
+	@echo "... HSWITCH"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

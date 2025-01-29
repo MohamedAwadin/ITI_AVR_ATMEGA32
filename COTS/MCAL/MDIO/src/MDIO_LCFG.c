@@ -7,7 +7,7 @@
 
 
 	
-const Copy_enuPinConfigration_t PinsStatusArray[MDIO_NUM_OF_PINS * MDIO_NUM_OF_PORTS]={
+const MDIO_enuPinConfigration_t PinsStatusArray[MDIO_NUM_OF_PINS * MDIO_NUM_OF_PORTS]={
 	
 	MDIO_OUTPUT,      /* Port A Pin 0 */
 	MDIO_OUTPUT,      /* Port A Pin 1 */

@@ -11,7 +11,8 @@ typedef enum {
     MPORT_ERROR_INVALID_PortPin,
     MPORT_ERROR_INVALID_DIRECTION,
     MPORT_ERROR_UNCHANGEABLE_MODE,
-    MPORT_ERROR_INVALID_MODE
+    MPORT_ERROR_INVALID_MODE,
+    MPORT_ERROR_INVALID_Port
 } MPORT_enuErrorStatus_t;
 
 
@@ -53,6 +54,20 @@ typedef enum
     MPORT_PIN_D6 = 0x36,
     MPORT_PIN_D7 = 0x37,
 } MPORT_enuPortPin_t;
+
+typedef enum{
+	MPORT_PORTA=0,
+	MPORT_PORTB,
+	MPORT_PORTC,
+	MPORT_PORTD
+} MPORT_enuPortNum_t;
+
+
+typedef enum{
+	MPORT_ALL_OUTPUT,
+	MPORT_ALL_INFREE,
+	MPORT_ALL_INPULLUP
+}MPORT_enuPortConfigration_t;	
 
 typedef enum
 {
@@ -131,5 +146,9 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinMode(MPORT_enuPortPin_t Copy_enuPortPin, M
  *
  */
 void MPort_vInit(void);
+
+
+
+MPORT_enuErrorStatus_t MPORT_enuSetPortDirection(MPORT_enuPortNum_t Copy_enuPortNum, MPORT_enuPortConfigration_t Copy_enuPortConfigration);
 
 #endif // MPORT_H

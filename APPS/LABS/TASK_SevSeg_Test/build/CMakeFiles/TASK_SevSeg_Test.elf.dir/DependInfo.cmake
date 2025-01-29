@@ -14,6 +14,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSEVENSEG/../../COMMON"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSEVENSEG/../../MCAL/MDIO/inc"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSEVENSEG/../../MCAL/MPORT/inc"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/../../COMMON"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/../../MCAL/MDIO/inc"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/../../MCAL/MPORT/inc"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/../../COMMON"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MPORT/inc"
@@ -23,6 +27,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/HSEVENSEG/CMakeFiles/HSEVENSEG.dir/DependInfo.cmake"
+  "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/HSWITCH/CMakeFiles/HSWITCH.dir/DependInfo.cmake"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake"
   "/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_SevSeg_Test/build/MPORT/CMakeFiles/MPORT.dir/DependInfo.cmake"
   )
