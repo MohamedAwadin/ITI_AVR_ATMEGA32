@@ -1,0 +1,1 @@
+avr-gcc -mmcu=atmega32 -DF_CPU=8000000UL -Os  -mmcu=atmega32 CMakeFiles/TASK_TestLCD_DRIVE.elf.dir/src/main.c.o  -o TASK_TestLCD_DRIVE.elf  HLCD/libHLCD.a MDIO/libMDIO.a MPORT/libMPORT.a 

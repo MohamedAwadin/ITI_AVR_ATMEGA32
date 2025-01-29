@@ -11,6 +11,10 @@ typedef   signed int s16;
 typedef unsigned long u32;
 typedef   signed long s32;
 
+typedef unsigned long long u64;
+typedef   signed long long s64;
+
+
 #define NULL_PTR  ((void*)0)
 
 

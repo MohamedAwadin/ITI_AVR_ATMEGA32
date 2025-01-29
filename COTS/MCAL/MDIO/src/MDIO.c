@@ -28,7 +28,7 @@ MDIO_gst_PORT_t *MDIO_gst_PORTB = (MDIO_gst_PORT_t *)PTB_BASE;
 MDIO_gst_PORT_t *MDIO_gst_PORTC = (MDIO_gst_PORT_t *)PTC_BASE;
 MDIO_gst_PORT_t *MDIO_gst_PORTD = (MDIO_gst_PORT_t *)PTD_BASE;
 
-MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration(Copy_enuPortNum_t Copy_enuPortNum, Copy_enuPinNum_t Copy_enuPinNum, Copy_enuPinConfigration_t Copy_enuPinConfigration)
+MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration(MDIO_enuPortNum_t Copy_enuPortNum, MDIO_enuPinNum_t Copy_enuPinNum, MDIO_enuPinConfigration_t Copy_enuPinConfigration)
 {
 
 	MDIO_enuErrorStatus_t Ret_enuError;
@@ -136,7 +136,7 @@ MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration(Copy_enuPortNum_t Copy_enuPortN
 	}
 	return Ret_enuError;
 }
-MDIO_enuErrorStatus_t MDIO_enuSetPortConfigration(Copy_enuPortNum_t Copy_enuPortNum, Copy_enuPortConfigration_t Copy_enuPortConfigration)
+MDIO_enuErrorStatus_t MDIO_enuSetPortConfigration(MDIO_enuPortNum_t Copy_enuPortNum, MDIO_enuPortConfigration_t Copy_enuPortConfigration)
 {
 
 	MDIO_enuErrorStatus_t Ret_enuError;
@@ -250,7 +250,7 @@ MDIO_enuErrorStatus_t MDIO_enuSetPortConfigration(Copy_enuPortNum_t Copy_enuPort
 	}
 	return Ret_enuError;
 }
-MDIO_enuErrorStatus_t MDIO_enuSetPinValue(Copy_enuPortNum_t Copy_enuPortNum, Copy_enuPinNum_t Copy_enuPinNum, Copy_enuPinState_t Copy_enuPinState)
+MDIO_enuErrorStatus_t MDIO_enuSetPinValue(MDIO_enuPortNum_t Copy_enuPortNum, MDIO_enuPinNum_t Copy_enuPinNum, MDIO_enuPinState_t Copy_enuPinState)
 {
 	MDIO_enuErrorStatus_t Ret_enuError;
 	if ((Copy_enuPinNum >= MDIO_PIN0) && (Copy_enuPinNum <= MDIO_PIN7))
@@ -317,7 +317,7 @@ MDIO_enuErrorStatus_t MDIO_enuSetPinValue(Copy_enuPortNum_t Copy_enuPortNum, Cop
 	}
 	return Ret_enuError;
 }
-MDIO_enuErrorStatus_t MDIO_enuSetPortValue(Copy_enuPortNum_t Copy_enuPortNum, Copy_enuPortState_t Copy_enuPortState)
+MDIO_enuErrorStatus_t MDIO_enuSetPortValue(MDIO_enuPortNum_t Copy_enuPortNum, MDIO_enuPortState_t Copy_enuPortState)
 {
 	MDIO_enuErrorStatus_t Ret_enuError;
 
@@ -389,7 +389,7 @@ MDIO_enuErrorStatus_t MDIO_enuSetPortValue(Copy_enuPortNum_t Copy_enuPortNum, Co
 	return Ret_enuError;
 }
 
-MDIO_enuErrorStatus_t MDIO_enuGetPortValue(Copy_enuPortNum_t Copy_enuPortNum, u8 *add_pu8PortState)
+MDIO_enuErrorStatus_t MDIO_enuGetPortValue(MDIO_enuPortNum_t Copy_enuPortNum, u8 *add_pu8PortState)
 {
 	MDIO_enuErrorStatus_t Ret_enuError;
 
@@ -421,7 +421,7 @@ MDIO_enuErrorStatus_t MDIO_enuGetPortValue(Copy_enuPortNum_t Copy_enuPortNum, u8
 	}
 }
 
-MDIO_enuErrorStatus_t MDIO_enuGetPinValue(Copy_enuPortNum_t Copy_enuPortNum, Copy_enuPinNum_t Copy_enuPinNum, u8 *Add_pu8PinValue)
+MDIO_enuErrorStatus_t MDIO_enuGetPinValue(MDIO_enuPortNum_t Copy_enuPortNum, MDIO_enuPinNum_t Copy_enuPinNum, u8 *Add_pu8PinValue)
 {
 	MDIO_enuErrorStatus_t Ret_enuError;
 	if ((Copy_enuPinNum >= 0) && (Copy_enuPinNum < 8))
@@ -462,7 +462,7 @@ MDIO_enuErrorStatus_t MDIO_enuGetPinValue(Copy_enuPortNum_t Copy_enuPortNum, Cop
 	return Ret_enuError;
 }
 
-MDIO_enuErrorStatus_t MDIO_enuSetPortWValue(Copy_enuPortNum_t Copy_enuPortNum, u8 Copy_u8PortState)
+MDIO_enuErrorStatus_t MDIO_enuSetPortWValue(MDIO_enuPortNum_t Copy_enuPortNum, u8 Copy_u8PortState)
 {
 	MDIO_enuErrorStatus_t Ret_enuError;
 
@@ -495,10 +495,10 @@ MDIO_enuErrorStatus_t MDIO_enuSetPortWValue(Copy_enuPortNum_t Copy_enuPortNum, u
 	return Ret_enuError;
 }
 
-MDIO_enuErrorStatus_t MDIO_enuInitPin(Copy_enuPinNum_t Copy_enuPinNum, Copy_enuPinConfigration_t Copy_enuPinConfigration)
+MDIO_enuErrorStatus_t MDIO_enuInitPin(MDIO_enuPinNum_t Copy_enuPinNum, MDIO_enuPinConfigration_t Copy_enuPinConfigration)
 {
 	MDIO_enuErrorStatus_t Ret_enuError;
-	Copy_enuPortNum_t port = Copy_enuPinNum / MDIO_NUM_OF_PINS;
+	MDIO_enuPortNum_t port = Copy_enuPinNum / MDIO_NUM_OF_PINS;
 	u8 pin_num = Copy_enuPinNum % MDIO_NUM_OF_PINS;
 
 	if (Copy_enuPinNum > MDIO_PIN7)
@@ -595,7 +595,7 @@ MDIO_enuErrorStatus_t MDIO_enuInitPin(Copy_enuPinNum_t Copy_enuPinNum, Copy_enuP
 void MDIO_vInit(void)
 {
 	MDIO_enuErrorStatus_t Ret_enuError;
-	Copy_enuPinNum_t Local_uint8Iter;
+	MDIO_enuPinNum_t Local_uint8Iter;
 	for (Local_uint8Iter = MDIO_PIN0; Local_uint8Iter < (MDIO_NUM_OF_PORTS * MDIO_NUM_OF_PINS); Local_uint8Iter++)
 	{
 		Ret_enuError = MDIO_enuInitPin(Local_uint8Iter, PinsStatusArray[Local_uint8Iter]);
@@ -606,7 +606,7 @@ void MDIO_vInit(void)
 	}
 }
 
-void MDIO_vSetPin(Copy_enuPortNum_t Copy_u8PortNum, Copy_enuPinNum_t Copy_u8PinNum, Copy_enuPinState_t Copy_u8Value)
+void MDIO_vSetPin(MDIO_enuPortNum_t Copy_u8PortNum, MDIO_enuPinNum_t Copy_u8PinNum, MDIO_enuPinState_t Copy_u8Value)
 {
 
 	if (Copy_u8PinNum > 7)

@@ -7,6 +7,8 @@ CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/
 CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/COMMON/StdTypes.h
 CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSEVENSEG/inc/HSEVENSEG.h
 CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSEVENSEG/inc/HSEVENSEG_Config.h
+CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc/HSWITCH.h
+CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/HAL/HSWITCH/inc/HSWITCH_Config.h
 CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO.h
 CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_LCFG.h
 CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o: /home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/COTS/MCAL/MDIO/inc/MDIO_PBCFG.h

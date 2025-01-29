@@ -27,8 +27,8 @@ typedef enum {
 
 /* Switch Configuration Structure */
 typedef struct {
-    Copy_enuPortNum_t Switch_Port;       // Port (e.g., MDIO_PORTA, MDIO_PORTB, etc.)
-    Copy_enuPinNum_t Switch_Pin;         // Pin (e.g., MDIO_PIN0, MDIO_PIN1, etc.)
+    MDIO_enuPortNum_t Switch_Port;       // Port (e.g., MDIO_PORTA, MDIO_PORTB, etc.)
+    MDIO_enuPinNum_t Switch_Pin;         // Pin (e.g., MDIO_PIN0, MDIO_PIN1, etc.)
     HSWITCH_enuConnectionType_t Switch_Connection;  // Connection type (PULLUP or PULLDOWN)
 } HSWITCH_strConfig_t;
 

@@ -3,6 +3,7 @@
         "hswitch.h": "c",
         "hsevenseg.h": "c",
         "mport.h": "c",
-        "hled.h": "c"
+        "hled.h": "c",
+        "hlcd.h": "c"
     }
 }

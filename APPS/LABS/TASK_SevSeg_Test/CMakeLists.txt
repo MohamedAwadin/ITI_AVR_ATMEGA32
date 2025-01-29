@@ -18,11 +18,14 @@ add_subdirectory(../../../COTS/MCAL/MPORT ${CMAKE_BINARY_DIR}/MPORT)
 # Include the HSEVENSEG driver
 add_subdirectory(../../../COTS/HAL/HSEVENSEG ${CMAKE_BINARY_DIR}/HSEVENSEG)
 
+# Include the HSWITCH driver
+add_subdirectory(../../../COTS/HAL/HSWITCH ${CMAKE_BINARY_DIR}/HSWITCH)
+
 # Create the executable
 add_executable(${PROJECT_NAME}.elf src/main.c)
 
 # Link the MDIO and HSEVENSEG libraries
-target_link_libraries(${PROJECT_NAME}.elf PUBLIC HSEVENSEG MDIO MPORT)
+target_link_libraries(${PROJECT_NAME}.elf PUBLIC HSEVENSEG HSWITCH MDIO MPORT)
 
 # Include the flash script and configure flashing
 include(../../../COTS/Cmake/flash.cmake)

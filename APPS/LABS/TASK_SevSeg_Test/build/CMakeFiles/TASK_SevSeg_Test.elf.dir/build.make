@@ -80,6 +80,7 @@ TASK_SevSeg_Test_elf_EXTERNAL_OBJECTS =
 TASK_SevSeg_Test.elf: CMakeFiles/TASK_SevSeg_Test.elf.dir/src/main.c.o
 TASK_SevSeg_Test.elf: CMakeFiles/TASK_SevSeg_Test.elf.dir/build.make
 TASK_SevSeg_Test.elf: HSEVENSEG/libHSEVENSEG.a
+TASK_SevSeg_Test.elf: HSWITCH/libHSWITCH.a
 TASK_SevSeg_Test.elf: MDIO/libMDIO.a
 TASK_SevSeg_Test.elf: MPORT/libMPORT.a
 TASK_SevSeg_Test.elf: CMakeFiles/TASK_SevSeg_Test.elf.dir/link.txt

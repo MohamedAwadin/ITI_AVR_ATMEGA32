@@ -169,3 +169,119 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinMode(MPORT_enuPortPin_t Copy_enuPortPin, M
 }
 
 
+
+
+MPORT_enuErrorStatus_t MPORT_enuSetPortDirection(MPORT_enuPortNum_t Copy_enuPortNum, MPORT_enuPortConfigration_t Copy_enuPortConfigration)
+{
+
+	MPORT_enuErrorStatus_t Ret_enuError;
+
+	switch (Copy_enuPortConfigration)
+	{
+
+	case MPORT_ALL_OUTPUT:
+		switch (Copy_enuPortNum)
+		{
+		case MPORT_PORTA:
+			DDRA = 0xff;
+			PORTA = 0x0;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		case MPORT_PORTB:
+			DDRB = 0xff;
+			PORTB = 0x0;
+			Ret_enuError = MPORT_OK;
+
+			break;
+
+		case MPORT_PORTC:
+			DDRC = 0xff;
+			PORTC = 0x0;
+			Ret_enuError = MPORT_OK;
+
+			break;
+		case MPORT_PORTD:
+			DDRD = 0xff;
+			PORTD = 0x0;
+			Ret_enuError = MPORT_OK;
+			break;
+		default:
+			Ret_enuError = MPORT_ERROR_INVALID_Port;
+			break;
+		}
+
+		break;
+
+	case MPORT_ALL_INFREE:
+		switch (Copy_enuPortNum)
+		{
+		case MPORT_PORTA:
+			DDRA = 0x0;
+			PORTA = 0x0;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		case MPORT_PORTB:
+			DDRB = 0x0;
+			PORTB = 0x0;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		case MPORT_PORTC:
+			DDRC = 0x0;
+			PORTC = 0x0;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		case MPORT_PORTD:
+			DDRD = 0x0;
+			PORTD = 0x0;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		default:
+			Ret_enuError = MPORT_ERROR_INVALID_Port;
+			break;
+		}
+		break;
+
+	case MPORT_ALL_INPULLUP:
+		switch (Copy_enuPortNum)
+		{
+		case MPORT_PORTA:
+			DDRA = 0x0;
+			PORTA = 0xFF;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		case MPORT_PORTB:
+			DDRB = 0x0;
+			PORTB = 0xFF;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		case MPORT_PORTC:
+			DDRC = 0x0;
+			PORTC = 0xFF;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		case MPORT_PORTD:
+			DDRD = 0x0;
+			PORTD = 0xFF;
+			Ret_enuError = MPORT_OK;
+			break;
+
+		default:
+			Ret_enuError = MPORT_ERROR_INVALID_Port;
+			break;
+		}
+		break;
+
+	default:
+		Ret_enuError = MPORT_ERROR_INVALID_DIRECTION;
+		break;
+	}
+	return Ret_enuError;
+}
