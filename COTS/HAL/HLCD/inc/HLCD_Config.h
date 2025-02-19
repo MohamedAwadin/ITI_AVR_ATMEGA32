@@ -9,15 +9,15 @@
 _4Bit : For 4 bit mode "Data pins can connect in any separated pins in the MCU"
 _8Bit : For 8 bit mode "Data port"
 */
-#define HLCD_Mode _8Bit
+#define HLCD_Mode _4Bit
 
 /*********************************************************************/
 /********************Configration PINS******************************/
 
 /***Select Instruction Pins***/
-#define HLCD_RS                     MPORT_PIN_A0
-#define HLCD_RW                     MPORT_PIN_A1
-#define HLCD_EN                     MPORT_PIN_A2
+#define HLCD_RS                     MPORT_PIN_C0
+#define HLCD_RW                     MPORT_PIN_C1
+#define HLCD_EN                     MPORT_PIN_C2
 
 #if (HLCD_Mode == _8Bit)
 /*****For 8 Bit Mode*********/
@@ -32,10 +32,10 @@ _8Bit : For 8 bit mode "Data port"
 
 /*****For 4 Bit Mode*********/
 /********"Select Pins Data"***********/
-#define HLCD_D0_4Bit                MPORT_PIN_B4
-#define HLCD_D1_4Bit                MPORT_PIN_B5
-#define HLCD_D2_4Bit                MPORT_PIN_B6
-#define HLCD_D3_4Bit                MPORT_PIN_B7
+#define HLCD_D0_4Bit                MPORT_PIN_C3
+#define HLCD_D1_4Bit                MPORT_PIN_C4
+#define HLCD_D2_4Bit                MPORT_PIN_C5
+#define HLCD_D3_4Bit                MPORT_PIN_C6
 
 /*********"Config LCD Settings"***********/
 #define HLCD_FUNC_SET_INS_4Bit		     	0x28	   // 0b 0 0 1 1(DL=0"4-bit"/DL=1"8-bit") 1(N=0"1 Line Display"/N=1"2 Line Display") 1(F=0"5x7 dots font"/N=1"5x10 dots font") X X

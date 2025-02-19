@@ -1,0 +1,14 @@
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/CMakeFiles/burn_TASK_TestEXTI_DRIVER.elf.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/CMakeFiles/flash_TASK_TestEXTI_DRIVER.elf.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/CMakeFiles/TASK_TestEXTI_DRIVER.elf.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MDIO/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MDIO/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MDIO/CMakeFiles/MDIO.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MPORT/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MPORT/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MPORT/CMakeFiles/MPORT.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MEXTINT/CMakeFiles/edit_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MEXTINT/CMakeFiles/rebuild_cache.dir
+/home/awadin/ITI_9Monthes/AVR/Avr_Cmake/ITI_AVR_ATMEGA32/APPS/LABS/TASK_TestEXTI_DRIVER/build/MEXTINT/CMakeFiles/MEXTINT.dir

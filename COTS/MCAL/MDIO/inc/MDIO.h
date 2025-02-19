@@ -73,23 +73,12 @@ extern const MDIO_enuPinConfigration_t PinsStatusArray[MDIO_NUM_OF_PINS * MDIO_N
 
 
 
-MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration (MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPinNum_t            Copy_enuPinNum             ,MDIO_enuPinConfigration_t Copy_enuPinConfigration);
-
-
+MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration(MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPinNum_t Copy_enuPinNum,MDIO_enuPinConfigration_t Copy_enuPinConfigration);
 MDIO_enuErrorStatus_t MDIO_enuSetPortConfigration(MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPortConfigration_t  Copy_enuPortConfigration);
-
-
-MDIO_enuErrorStatus_t MDIO_enuSetPinValue        (MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPinNum_t            Copy_enuPinNum             ,MDIO_enuPinState_t Copy_enuPinState);
-
-
-MDIO_enuErrorStatus_t MDIO_enuSetPortValue       (MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPortState_t         Copy_enuPortState);
-
-
-MDIO_enuErrorStatus_t MDIO_enuSetPortWValue      (MDIO_enuPortNum_t Copy_enuPortNum ,u8                          Copy_u8PortState);
-
-
-MDIO_enuErrorStatus_t MDIO_enuGetPinValue        (MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPinNum_t            Copy_enuPinNum             ,u8* Add_pu8PinValue);
-
+MDIO_enuErrorStatus_t MDIO_enuSetPinValue  (MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPinNum_t    Copy_enuPinNum ,MDIO_enuPinState_t Copy_enuPinState);
+MDIO_enuErrorStatus_t MDIO_enuSetPortValue (MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPortState_t Copy_enuPortState);
+MDIO_enuErrorStatus_t MDIO_enuSetPortWValue(MDIO_enuPortNum_t Copy_enuPortNum ,u8                  Copy_u8PortState);
+MDIO_enuErrorStatus_t MDIO_enuGetPinValue  (MDIO_enuPortNum_t Copy_enuPortNum ,MDIO_enuPinNum_t    Copy_enuPinNum ,u8* Add_pu8PinValue);
 MDIO_enuErrorStatus_t MDIO_enuInitPin(MDIO_enuPinNum_t Copy_enuPinNum , MDIO_enuPinConfigration_t Copy_enuPinConfigration );
 
 

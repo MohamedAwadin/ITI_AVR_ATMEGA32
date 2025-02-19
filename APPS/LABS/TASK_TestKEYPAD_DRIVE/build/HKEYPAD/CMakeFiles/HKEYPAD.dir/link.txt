@@ -1,0 +1,2 @@
+/usr/bin/ar qc libHKEYPAD.a  CMakeFiles/HKEYPAD.dir/src/HKEYPAD.c.o CMakeFiles/HKEYPAD.dir/src/HKEYPAD_Config.c.o
+/usr/bin/ranlib libHKEYPAD.a
