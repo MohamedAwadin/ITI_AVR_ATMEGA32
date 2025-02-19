@@ -49,6 +49,10 @@ void HLCD_vWriteData(u8 Copy_u8Data)
 
 void HLCD_vInit(void)
 {
+    MPORT_enuSetPinDirection(HLCD_RS      , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_RW      , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_EN      , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPortDirection(HLCD_PORT_8Bit, MPORT_ALL_OUTPUT);
     //_delay_ms(50);
     _delay_ms(HLCD_POWER_UP_DELAY);
     HLCD_vWriteCommand(HLCD_FUNC_SET_INS_8Bit);
@@ -168,6 +172,15 @@ void HLCD_vWriteData(u8 Copy_u8Data)
 
 void HLCD_vInit(void)
 {
+    MPORT_enuSetPinDirection(HLCD_RS      , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_RW      , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_EN      , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_D0_4Bit , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_D1_4Bit , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_D2_4Bit , MPORT_PORT_PIN_OUTPUT);
+    MPORT_enuSetPinDirection(HLCD_D3_4Bit , MPORT_PORT_PIN_OUTPUT);
+    
+
     //_delay_ms(50);
     _delay_ms(HLCD_POWER_UP_DELAY);
 	HLCD_vWriteCommand(HLCD_FUNC_SET__4Bit);

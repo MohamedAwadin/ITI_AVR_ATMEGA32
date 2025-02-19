@@ -11,7 +11,6 @@ Contains the application code for various tasks and Tests.
 
 ------ 
 ### **COTS**: 
-  
 #### **MCAL Drivers**
 The MCAL layer provides low-level drivers for interfacing with the microcontroller's peripherals.
 
@@ -21,7 +20,9 @@ The MCAL layer provides low-level drivers for interfacing with the microcontroll
 
 2. **MPORT (Port Driver)**:
    - Manages port-level configurations and operations.
-   
+
+3. **MEXTINT (External Interupt Driver)**:
+   - Manages External Interupt HW Pins configurations and operations.
 
 
 
@@ -42,7 +43,9 @@ The HAL layer provides drivers for interfacing with external hardware components
 4. **HLCD (LCD Driver)**:
    - Interfaces with alphanumeric LCDs.
    - Supports both 4-bit and 8-bit modes.
-   
+
+5. **HKEYPAD (Key Pad Driver)**:
+   - Interfaces with KeyPad .
 
 ---
 ### **COMMON**: 

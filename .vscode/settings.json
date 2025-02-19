@@ -4,6 +4,7 @@
         "hsevenseg.h": "c",
         "mport.h": "c",
         "hled.h": "c",
-        "hlcd.h": "c"
+        "hlcd.h": "c",
+        "mextint.h": "c"
     }
 }

@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+9d3d74e63a92eb291cec29f03aadae0e CMakeFiles/burn_TASK_TestEXTI_DRIVER.elf
+d33fb199cee4f32325d0027e2324e0b1 CMakeFiles/flash_TASK_TestEXTI_DRIVER.elf
