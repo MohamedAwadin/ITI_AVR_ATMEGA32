@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMTIMER.a CMakeFiles/MTIMER.dir/src/MTIMER.c.o
+/usr/bin/ranlib libMTIMER.a

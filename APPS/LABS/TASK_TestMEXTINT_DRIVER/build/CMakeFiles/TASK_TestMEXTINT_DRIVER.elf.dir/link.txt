@@ -1,0 +1,1 @@
+avr-gcc -mmcu=atmega32 -DF_CPU=8000000UL -Os -mmcu=atmega32 CMakeFiles/TASK_TestMEXTINT_DRIVER.elf.dir/src/main.c.o -o TASK_TestMEXTINT_DRIVER.elf  MTIMER/libMTIMER.a MEXTINT/libMEXTINT.a MDIO/libMDIO.a MPORT/libMPORT.a 

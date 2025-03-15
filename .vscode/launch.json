@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/awadin/ITI_9Monthes/ITI_9Monthes/AVR/Avr_Cmake/new/ITI_AVR_ATMEGA32/COTS/MCAL/TIMER/src",
+      "program": "/home/awadin/ITI_9Monthes/ITI_9Monthes/AVR/Avr_Cmake/new/ITI_AVR_ATMEGA32/COTS/MCAL/TIMER/src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

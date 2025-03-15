@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMEXTINT.a CMakeFiles/MEXTINT.dir/src/MEXTINT.c.o
+/usr/bin/ranlib libMEXTINT.a

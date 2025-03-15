@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+456f63b1884e9e2c05f376e3f3deaa01 CMakeFiles/burn_TASK_TestTimer0_DRIVER.elf
+ad7ad75a1ca2901cffadc0013229d0fa CMakeFiles/flash_TASK_TestTimer0_DRIVER.elf
